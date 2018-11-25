@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyApplication.Web", "Le
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyApplication.Web - Installing Vue", "LegacyApplication.Web - 1\LegacyApplication.Web - Installing Vue.csproj", "{45B0F4DB-B80D-4356-8226-19EA271F0DC7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LegacyApplication.Web - Breaking Down", "LegacyApplication.Web - 2\LegacyApplication.Web - Breaking Down.csproj", "{23D60D80-8DE9-4AAB-914C-C3C7C6FDF029}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{45B0F4DB-B80D-4356-8226-19EA271F0DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45B0F4DB-B80D-4356-8226-19EA271F0DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45B0F4DB-B80D-4356-8226-19EA271F0DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23D60D80-8DE9-4AAB-914C-C3C7C6FDF029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23D60D80-8DE9-4AAB-914C-C3C7C6FDF029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23D60D80-8DE9-4AAB-914C-C3C7C6FDF029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23D60D80-8DE9-4AAB-914C-C3C7C6FDF029}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
