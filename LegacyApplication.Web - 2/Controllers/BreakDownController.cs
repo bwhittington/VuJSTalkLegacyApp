@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace LegacyApplication.Web.Controllers
 {
-    public class HomeController : Controller
+    public class BreakDownController : Controller
     {
         public ActionResult Index()
         {
