@@ -2,12 +2,8 @@
 @{
     ViewBag.Title = "Home Page";
 }
-<script>
-    //TODO: Add Account Information
-    window.serverData = @Html.Raw(Json.Encode(Model));
-</script>
 <div class="row">
-    <div class="col-md-6 call-out">
+    <div class="col-md-6">
         <!--TODO: Add Account Information-->
         <div id="account-information" class="row">
             <div class="col-md-12 font-weight-bold">
@@ -27,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6 call-out">
+    <div class="col-md-6">
         <!--TODO: Add Policy Holder Information-->
         <div id="policy-holder-information" class="row">
             <div class="col-md-12">
@@ -49,7 +45,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12 call-out" id="company-contacts" >
+    <div class="col-md-12" id="company-contacts">
         <div class="row">
             <div class="col-md-12 font-weight-bold">
                 <h2>Contacts</h2>
@@ -90,7 +86,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12 call-out">
+    <div class="col-md-12">
         <h2>Policies</h2>
         <table class="table table-striped" id="policies">
             <thead>

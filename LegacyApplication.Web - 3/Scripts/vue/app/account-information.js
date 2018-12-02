@@ -10,8 +10,16 @@ var vm = new Vue({
     methods: {
         //TODO: Add Account Information
         loadData: function () {
-            this.model = window.serverData;
-            this.formatDate(this.model.CreatedDate);
+            // GET /someUrl
+            this.$http.get('http://localhost:59129/Home/GetData').then(response => {
+
+                // get body data
+                this.model = response.body;
+                this.formatDate(this.model.CreatedDate);
+
+            }, response => {
+                // error callback
+            });            
         },
         //TODO: Add Account Information
         formatDate: function (unformattedDate) {

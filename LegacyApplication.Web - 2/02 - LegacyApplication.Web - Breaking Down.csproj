@@ -211,7 +211,10 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts\vue\app\account-information.js" />
+    <Content Include="Scripts\vue\app\contacts.js" />
     <Content Include="Scripts\vue\app\footer.js" />
+    <Content Include="Scripts\vue\app\policies.js" />
+    <Content Include="Scripts\vue\app\policy-holder-information.js" />
     <Content Include="Scripts\vue\vue.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
