@@ -7,9 +7,9 @@ using System.Web.Mvc;
 
 namespace LegacyApplication.Web.Controllers
 {
-    public class HomeController : Controller
+    public class VueController : Controller
     {
-        public HomeController()
+        public VueController()
         {
             var mockService = new MockService();
         }

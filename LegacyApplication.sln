@@ -5,12 +5,6 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00 - LegacyApplication.Web", "LegacyApplication.Web\00 - LegacyApplication.Web.csproj", "{FD6835F7-EC0F-4ED4-BE5E-B4CD4A37654E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 - LegacyApplication.Web - Installing Vue", "LegacyApplication.Web - 1\01 - LegacyApplication.Web - Installing Vue.csproj", "{45B0F4DB-B80D-4356-8226-19EA271F0DC7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 - LegacyApplication.Web - Breaking Down", "LegacyApplication.Web - 2\02 - LegacyApplication.Web - Breaking Down.csproj", "{23D60D80-8DE9-4AAB-914C-C3C7C6FDF029}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - LegacyApplication.Web - Converting to Services", "LegacyApplication.Web - 3\03 - LegacyApplication.Web - Converting to Services.csproj", "{882C9AB0-42B2-4E9A-B34F-DA06A3E44DEE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,18 +15,6 @@ Global
 		{FD6835F7-EC0F-4ED4-BE5E-B4CD4A37654E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD6835F7-EC0F-4ED4-BE5E-B4CD4A37654E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD6835F7-EC0F-4ED4-BE5E-B4CD4A37654E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{45B0F4DB-B80D-4356-8226-19EA271F0DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45B0F4DB-B80D-4356-8226-19EA271F0DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45B0F4DB-B80D-4356-8226-19EA271F0DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45B0F4DB-B80D-4356-8226-19EA271F0DC7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{23D60D80-8DE9-4AAB-914C-C3C7C6FDF029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23D60D80-8DE9-4AAB-914C-C3C7C6FDF029}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23D60D80-8DE9-4AAB-914C-C3C7C6FDF029}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23D60D80-8DE9-4AAB-914C-C3C7C6FDF029}.Release|Any CPU.Build.0 = Release|Any CPU
-		{882C9AB0-42B2-4E9A-B34F-DA06A3E44DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{882C9AB0-42B2-4E9A-B34F-DA06A3E44DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{882C9AB0-42B2-4E9A-B34F-DA06A3E44DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{882C9AB0-42B2-4E9A-B34F-DA06A3E44DEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

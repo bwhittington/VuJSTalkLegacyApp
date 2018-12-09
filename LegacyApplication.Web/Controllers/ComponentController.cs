@@ -7,18 +7,12 @@ using System.Web.Mvc;
 
 namespace LegacyApplication.Web.Controllers
 {
-    public class HomeController : Controller
+    public class ComponentController : Controller
     {
-        public HomeController()
-        {
-            var mockService = new MockService();
-        }
-
         public ActionResult Index()
         {
             var service = new MockService();
             return View(service.GetAccount());
         }
-
     }
 }

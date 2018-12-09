@@ -22,6 +22,20 @@ namespace LegacyApplication.Web
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
+            //VUE #2
+            bundles.Add(new ScriptBundle("~/bundles/vue").Include(
+                      "~/Scripts/vue/vue.min.js",
+                      "~/Scripts/vue/vue-resource.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/vue-app").Include(
+                      "~/Scripts/vue/app/*.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/vue-app-1").Include(
+                      "~/Scripts/vue/app-1/*.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/vue-app-2").Include(
+                      "~/Scripts/vue/app-2/*.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));

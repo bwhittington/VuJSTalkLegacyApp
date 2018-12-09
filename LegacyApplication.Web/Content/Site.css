@@ -1,5 +1,4 @@
 ﻿body {
-
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -18,9 +17,14 @@ textarea {
 
 
 .row {
-    background-color:rgba(255,255,255, .5);
+    background-color: rgba(255,255,255, .5);
 }
 
 .col-md-12, .col-md-6 {
-    background-color:white;
+    background-color: white;
+}
+
+.call-out {
+    border: 5px solid red;
+    margin: 1em;
 }
