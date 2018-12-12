@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "devDependencies": {
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.21",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "vue": "^2.5.21",
+    "vue-resource": "^1.5.1"
+  },
+  "scripts": {
+    "dev": " webpack --mode development",
+    "prod": "webpack --mode production"
+  }
+}

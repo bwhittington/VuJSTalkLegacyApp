@@ -1,0 +1,120 @@
+﻿@model LegacyApplication.Web.Models.Account
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="row">
+    <div class="col-md-6">
+        <!--TODO: Add Account Information-->
+        <div id="account-information" class="row">
+            <div class="col-md-12 font-weight-bold">
+                <h2>Account Information</h2>
+            </div>
+            <div class="col-md-6 font-weight-bold">
+                Account Number:
+            </div>
+            <div class="col-md-6">
+                {{ model.AccountNumber }}
+            </div>
+            <div class="col-md-6 font-weight-bold">
+                Account Creation Date:
+            </div>
+            <div class="col-md-6">
+                {{ model.FormattedCreatedDate  }}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <!--TODO: Add Policy Holder Information-->
+        <div id="policy-holder-information" class="row">
+            <div class="col-md-12">
+                <h2>Policy Holder Information</h2>
+            </div>
+            <div class="col-md-6 font-weight-bold">
+                Company Name:
+            </div>
+            <div class="col-md-6">
+                {{ model.PolicyHolder.CompanyName }}
+            </div>
+            <div class="col-md-6 font-weight-bold">
+                Company Address:
+            </div>
+            <div class="col-md-6">
+                {{ model.PolicyHolder.StreetAddress }}<br />
+                <span v-if="model.PolicyHolder.StreetAddress2">{{ model.PolicyHolder.StreetAddress2 }}</span>
+                {{ model.PolicyHolder.City }}, {{ model.PolicyHolder.State }} {{ model.PolicyHolder.Zip }}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12" id="company-contacts">
+        <div class="row">
+            <div class="col-md-12 font-weight-bold">
+                <h2>Contacts</h2>
+            </div>
+            <div class="col-md-2 font-weight-bold">
+                Company Contact Name
+            </div>
+            <div class="col-md-2 font-weight-bold">
+                Company Contact Phone Number
+            </div>
+            <div class="col-md-2 font-weight-bold">
+                Company Contact Email
+            </div>
+            <div class="col-md-2 font-weight-bold">
+                Company Contact Title
+            </div>
+            <div class="col-md-2 font-weight-bold">
+                Company Contact Address
+            </div>
+        </div>
+        <div class="row" v-for="contact in contacts">
+            <div class="col-md-2 ">
+                {{contact.FirstName}} {{ contact.LastName }}
+            </div>
+            <div class="col-md-2">
+                {{ contact.PhoneNumber}}
+            </div>
+            <div class="col-md-2">
+                {{ contact.Email }}
+            </div>
+            <div class="col-md-2">
+                {{ contact.Title }}
+            </div>
+            <div class="col-md-2">
+                {{ contact.StreetAddress }} <br />
+                <span v-if="contact.StreetAddress2">{{ contact.StreetAddress2 }}</span>
+                {{ contact.City }}, {{ contact.State }} {{ contact.Zip }}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <h2>Policies</h2>
+        <table class="table table-striped" id="policies">
+            <thead>
+                <tr>
+                    <th scope="col">Policy Type</th>
+                    <th scope="col">Policy Number</th>
+                    <th scope="col">Renewal Number</th>
+                    <th scope="col">Endorsement Number</th>
+                    <th scope="col">Effective Date</th>
+                    <th scope="col">Expiration Date</th>
+                    <th scope="col">Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="policy in model.Policies">
+                    <th scope="row">{{ policy.PolicyType }}</th>
+                    <td scope="row">{{ policy.PolicyNumber }}</td>
+                    <td scope="row">{{ policy.RenewalNumber }}</td>
+                    <td scope="row">{{ policy.EndorsementNumber }}</td>
+                    <td scope="row">{{ formatDate(policy.EffectiveDate) }}</td>
+                    <td scope="row">{{ formatDate(policy.ExpirationDate) }}</td>
+                    <td scope="row">{{ policy.Cost }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+@section scripts{
+    @Scripts.Render("~/bundles/vue")
+    @Scripts.Render("~/bundles/vue-app-2")
+}

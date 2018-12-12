@@ -1,7 +1,6 @@
-﻿// Vue-1 - Installing Vue - 02
-$(function () {
+﻿$(function () {
     var vm = new Vue({
-        el: 'footer',
+        el: '#footer',
         template: '<div>@{{currentYear}} - Fake Insurance Company</div>',
         data: {
             currentYear: new Date().getFullYear()
